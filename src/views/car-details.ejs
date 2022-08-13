@@ -3,21 +3,31 @@
 
 <div class="result-card">
     <h4><%= car.make %> - <%= car.model %></h4>
-    <h5>Info</h5>
-    <p>Year: <strong><%= car.releaseYear %></strong></p>
-    <p>Gen: <strong><%= car.gen %></strong></p>
-    <p>Body Type: <strong><%= car.bodyType %></strong></p>
-    <p>Number of Doors: <strong><%= car.numberOfDoors %></strong></p>
-    <h5>Fuel</h5>
-    <p>Fuel: <strong><%= car.fuelType %></strong></p>
-    <p>MPG: <strong><%= car.mpg %></strong></p>
-    <h5>Spec</h5>
-    <p>Engine: <strong><%= car.engineSize %></strong></p>
-    <p>Transmission: <strong><%= car.transmission %></strong></p>
-    <h5>Performance</h5>
-    <p>Top Speed: <strong><%= car.topSpeed %></strong></p>
-    <p>Horsepower: <strong><%= car.horsePower %></strong></p>
-    <p>0 - 60 mph: <strong><%= car.zeroToSixty %></strong></p>
+    <div class="car-details-data-col car-details-data-col-left">
+        <h5>Info</h5>
+        <p>Year: <strong><%= car.releaseYear %></strong></p>
+        <p>Gen: <strong><%= car.gen %></strong></p>
+        <p>Body Type: <strong><%= car.bodyType %></strong></p>
+        <p>Number of Doors: <strong><%= car.numberOfDoors %></strong></p>
+        <h5>Fuel</h5>
+        <p>Fuel: <strong><%= car.fuelType %></strong></p>
+        <p>MPG: <strong><%= car.mpg %></strong></p>
+    </div>
+    <div class="car-details-data-col car-details-data-col-right">
+        <h5>Spec</h5>
+        <p>Engine: <strong><%= car.engineSize %></strong></p>
+        <p>Transmission: <strong><%= car.transmission %></strong></p>
+        <h5>Performance</h5>
+        <p>Top Speed: <strong><%= car.topSpeed %></strong></p>
+        <p>Horsepower: <strong><%= car.horsePower %></strong></p>
+        <p>0 - 60 mph: <strong><%= car.zeroToSixty %></strong></p>
+    </div>
 </div>
+
+<div class="car-details-below-links">
+    <a href="/cars"><%= car.make %> - <%= car.model %>'s For Sale</a>
+    <a>Add to Liked Cars</a>
+</div>
+
 
 <%- include('./partials/foot.ejs') %>
