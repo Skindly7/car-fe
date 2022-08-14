@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const appConfig = require('./config/app')
 const homeRoutes = require('./routes/home')
 const carsRoutes = require('./routes/cars')
+const marketRoutes = require('./routes/market')
 
 // register view engine
 app.set('view engine', appConfig.VIEW_ENGINE)
@@ -22,4 +23,5 @@ app.listen(appConfig.PORT)
 // routes
 app.use('/home', homeRoutes)
 app.use('/cars', carsRoutes)
+app.use('/market', marketRoutes)
 
