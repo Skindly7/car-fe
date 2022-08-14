@@ -23,7 +23,6 @@ const get_car_details = (request, response) => {
     })
 }
 
-
 module.exports = {
     get_cars,
     get_car_details,

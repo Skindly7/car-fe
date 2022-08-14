@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-2 filter-card">
-            <p>Filter by:</p>
+            <p>Sort by:</p>
             <p>Make</p>
             <p>Engine</p>
             <p>Transmission</p>
@@ -17,7 +17,7 @@
             <div class="results">
                 <% carsData.forEach(car => { %>
                 <a class="results-card-a" href="/cars/<%= car.id%>">
-                    <div class="result-card">
+                    <div class="result-card-for-sale">
                         <h4><%= car.make %> - <%= car.model %></h4>
                         <p>Year: <strong><%= car.releaseYear %></strong></p>
                         <p>Gen: <strong><%= car.gen %></strong></p>
@@ -25,6 +25,7 @@
                         <p>Transmission: <strong><%= car.transmission %></strong></p>
                         <p>Body Type: <strong><%= car.bodyType %></strong></p>
                         <p>Number of Doors: <strong><%= car.numberOfDoors %></strong></p>
+                        <p>Colour:</p>
                     </div>
                 </a>
                 <% }) %>
