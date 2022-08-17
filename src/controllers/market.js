@@ -4,7 +4,7 @@ const get_car_market_details = (request, response) => {
     const carID = request.params.car_id
     axios({
         method: 'get',
-        url: `http://localhost:7020/market/${carID}`
+        url: `http://localhost:7010/market/${carID}`
     }).then(apiResponse => {
         const carsData = apiResponse.data
         console.log(carsData)
