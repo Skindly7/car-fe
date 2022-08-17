@@ -5,11 +5,12 @@
     <div class="row">
         <div class="col-2 filter-card">
             <p>Filter by:</p>
+            <p>Country of Origin</p>
             <p>Make</p>
-            <p>Engine</p>
-            <p>Transmission</p>
+            <p>Model</p>
             <p>Body Type</p>
             <p>Number Of Doors</p>
+            <p>Release Year</p>
         </div>
         <div class="col-10 gallery-card">
 
@@ -18,12 +19,11 @@
                 <a class="results-card-a" href="/cars/<%= car.id%>">
                     <div class="result-card">
                         <h4><%= car.make %> - <%= car.model %></h4>
-                        <p>Year: <strong><%= car.releaseYear %></strong></p>
                         <p>Gen: <strong><%= car.gen %></strong></p>
-                        <p>Engine: <strong><%= car.engineSize %></strong></p>
-                        <p>Transmission: <strong><%= car.transmission %></strong></p>
+                        <p>Years: <strong><%= car.releaseYearRange %></strong></p>
                         <p>Body Type: <strong><%= car.bodyType %></strong></p>
                         <p>Number of Doors: <strong><%= car.numberOfDoors %></strong></p>
+                        <p>Country of Origin: <strong><%= car.countryOfOrigin %></strong></p>
                     </div>
                 </a>
                 <% }) %>
